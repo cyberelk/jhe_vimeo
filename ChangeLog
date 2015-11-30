@@ -1,0 +1,6 @@
+2015-11-30 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.0.0
+
+	* Initial state kiskstarted with the ExtensionBuilder
+	* Added this ChangeLog file
+	* Set the version to 0.0.0
+	* Changes the label field of the video tca to the title
