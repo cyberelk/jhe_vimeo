@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Vimeo extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_jhevimeo_domain_model_video">Video</label>
+			<label index="tx_jhevimeo_domain_model_video.vimeoid">vimeoid</label>
+			<label index="tx_jhevimeo_domain_model_video.width">width</label>
+			<label index="tx_jhevimeo_domain_model_video.height">height</label>
+			<label index="tx_jhevimeo_domain_model_video.title">title</label>
+			<label index="tx_jhevimeo_domain_model_video.description">description</label>
+			<label index="tx_jhevimeo_domain_model_video.video_lists">videoLists</label>
+			<label index="tx_jhevimeo_domain_model_videolist">VideoList</label>
+			<label index="tx_jhevimeo_domain_model_videolist.title">title</label>
+			<label index="tx_jhevimeo_domain_model_videolist.description">description</label>
+			<label index="tx_jhevimeo_domain_model_videolist.videos">videos</label>
+		</languageKey>
+	</data>
+</T3locallang>

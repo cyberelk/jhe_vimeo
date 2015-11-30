@@ -1,0 +1,39 @@
+plugin.tx_jhevimeo {
+	view {
+		templateRootPath = {$plugin.tx_jhevimeo.view.templateRootPath}
+		partialRootPath = {$plugin.tx_jhevimeo.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_jhevimeo.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_jhevimeo.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_jhevimeo._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-jhe-vimeo table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-jhe-vimeo table th {
+		font-weight:bold;
+	}
+
+	.tx-jhe-vimeo table td {
+		vertical-align:top;
+	}
+)

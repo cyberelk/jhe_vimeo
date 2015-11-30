@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'jhe_vimeo'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+            
+			<label index="tx_jhevimeo_domain_model_video">Video</label>
+			<label index="tx_jhevimeo_domain_model_video.vimeoid">Vimeoid</label>
+			<label index="tx_jhevimeo_domain_model_video.width">Width</label>
+			<label index="tx_jhevimeo_domain_model_video.height">Height</label>
+			<label index="tx_jhevimeo_domain_model_video.title">Title</label>
+			<label index="tx_jhevimeo_domain_model_video.description">Description</label>
+			<label index="tx_jhevimeo_domain_model_video.video_lists">Video Lists</label>
+
+			<label index="tx_jhevimeo_domain_model_videolist">Video List</label>
+			<label index="tx_jhevimeo_domain_model_videolist.title">Title</label>
+			<label index="tx_jhevimeo_domain_model_videolist.description">Description</label>
+			<label index="tx_jhevimeo_domain_model_videolist.videos">Videos</label>
+
+		</languageKey>
+	</data>
+</T3locallang>

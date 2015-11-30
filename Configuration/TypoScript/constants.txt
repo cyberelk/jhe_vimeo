@@ -1,0 +1,14 @@
+plugin.tx_jhevimeo {
+	view {
+		# cat=plugin.tx_jhevimeo/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:jhe_vimeo/Resources/Private/Templates/
+		# cat=plugin.tx_jhevimeo/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:jhe_vimeo/Resources/Private/Partials/
+		# cat=plugin.tx_jhevimeo/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:jhe_vimeo/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_jhevimeo//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
