@@ -6,7 +6,6 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
-            
 			<label index="tx_jhevimeo_domain_model_video">Video</label>
 			<label index="tx_jhevimeo_domain_model_video.vimeoid">Vimeoid</label>
 			<label index="tx_jhevimeo_domain_model_video.width">Width</label>
@@ -14,12 +13,23 @@
 			<label index="tx_jhevimeo_domain_model_video.title">Title</label>
 			<label index="tx_jhevimeo_domain_model_video.description">Description</label>
 			<label index="tx_jhevimeo_domain_model_video.video_lists">Video Lists</label>
-
 			<label index="tx_jhevimeo_domain_model_videolist">Video List</label>
 			<label index="tx_jhevimeo_domain_model_videolist.title">Title</label>
 			<label index="tx_jhevimeo_domain_model_videolist.description">Description</label>
 			<label index="tx_jhevimeo_domain_model_videolist.videos">Videos</label>
-
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_jhevimeo_domain_model_video">Video</label>
+			<label index="tx_jhevimeo_domain_model_video.vimeoid">Vimeo-ID</label>
+			<label index="tx_jhevimeo_domain_model_video.width">Breite</label>
+			<label index="tx_jhevimeo_domain_model_video.height">Höhe</label>
+			<label index="tx_jhevimeo_domain_model_video.title">Titel</label>
+			<label index="tx_jhevimeo_domain_model_video.description">Beschreibung</label>
+			<label index="tx_jhevimeo_domain_model_video.video_lists">Video-Listen</label>
+			<label index="tx_jhevimeo_domain_model_videolist">Video-Liste</label>
+			<label index="tx_jhevimeo_domain_model_videolist.title">Titel</label>
+			<label index="tx_jhevimeo_domain_model_videolist.description">Beschreibung</label>
+			<label index="tx_jhevimeo_domain_model_videolist.videos">Videos</label>
 		</languageKey>
 	</data>
 </T3locallang>

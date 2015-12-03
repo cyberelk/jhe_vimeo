@@ -1,6 +1,8 @@
 2015-12-03 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.0.0
 
 	* Replaced the standard icons with vimeo ones
+	* Added the Assets folder to .gitignore
+	* Added german translations
 
 2015-11-30 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.0.0
 

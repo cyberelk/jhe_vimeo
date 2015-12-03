@@ -6,14 +6,21 @@
 		<csh_table>tx_jhevimeo_domain_model_video</csh_table>
 	</meta>
 	<data type="array">
-	<languageKey index="default" type="array">
-	   
+		<languageKey index="default" type="array">
 			<label index="vimeoid.description">vimeoid</label>
 			<label index="width.description">width</label>
 			<label index="height.description">height</label>
 			<label index="title.description">title</label>
 			<label index="description.description">description</label>
 			<label index="video_lists.description">videoLists</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="vimeoid.description">Vimeo-ID</label>
+			<label index="width.description">Breite</label>
+			<label index="height.description">Höhe</label>
+			<label index="title.description">Titel</label>
+			<label index="description.description">Beschreibung</label>
+			<label index="video_lists.description">Video-Listen</label>
 		</languageKey>
 	</data>
 </T3locallang>
