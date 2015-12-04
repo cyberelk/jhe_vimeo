@@ -1,6 +1,10 @@
 2015-12-04 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.0.0
 
 	* Implemented the correct m:n functionality between videos and video lists
+	* Added the flexforms for the backend plugins
+	* Added new showSingleVideo and showVideoLists actions to the controllers
+	* Added new template files for the new actions
+	* Code cleanup: deleted unused actions and template files
 
 2015-12-03 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.0.0
 

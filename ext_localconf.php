@@ -7,11 +7,11 @@ Tx_Extbase_Utility_Extension::configurePlugin(
 	$_EXTKEY,
 	'Pi1',
 	array(
-		'VideoList' => 'list, show, new, create, edit, update, delete',
+		'VideoList' => 'showVideoList',
 	),
 	// non-cacheable actions
 	array(
-		'VideoList' => 'create, update, delete',
+		'VideoList' => '',
 	)
 );
 
@@ -19,11 +19,11 @@ Tx_Extbase_Utility_Extension::configurePlugin(
 	$_EXTKEY,
 	'Pi2',
 	array(
-		'Video' => 'list, show, new, create, edit, update, delete',
+		'Video' => 'showSingleVideo',
 	),
 	// non-cacheable actions
 	array(
-		'Video' => 'create, update, delete',
+		'Video' => '',
 	)
 );
 

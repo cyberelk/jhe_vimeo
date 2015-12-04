@@ -1,0 +1,25 @@
+<T3DataStructure>
+    <meta type="array">
+        <langChildren>0</langChildren>
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT>
+        <type>array</type>
+        <el>
+            <settings.videolist>
+                <TCEforms>
+                    <exclude>1</exclude>
+                    <label>Videoliste auswählen</label>
+                    <config>
+                        <type>group</type>
+                        <internal_type>db</internal_type>
+                        <allowed>tx_jhevimeo_domain_model_videolist</allowed>
+                        <size>1</size>
+                        <maxitems>1</maxitems>
+                        <minitems>1</minitems>
+                    </config>
+                </TCEforms>
+            </settings.videolist>
+        </el>
+    </ROOT>
+</T3DataStructure>

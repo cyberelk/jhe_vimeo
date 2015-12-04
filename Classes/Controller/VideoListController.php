@@ -51,81 +51,13 @@ class Tx_JheVimeo_Controller_VideoListController extends Tx_Extbase_MVC_Controll
 	}
 
 	/**
-	 * action list
+	 * action showVideoList
 	 *
 	 * @return void
 	 */
-	public function listAction() {
-		$videoLists = $this->videoListRepository->findAll();
-		$this->view->assign('videoLists', $videoLists);
-	}
-
-	/**
-	 * action show
-	 *
-	 * @param Tx_JheVimeo_Domain_Model_VideoList $videoList
-	 * @return void
-	 */
-	public function showAction(Tx_JheVimeo_Domain_Model_VideoList $videoList) {
+	public function showVideoListAction() {
+		$videoList = $this->videoListRepository->findByUid($this->settings['videolist']);
 		$this->view->assign('videoList', $videoList);
 	}
-
-	/**
-	 * action new
-	 *
-	 * @param Tx_JheVimeo_Domain_Model_VideoList $newVideoList
-	 * @dontvalidate $newVideoList
-	 * @return void
-	 */
-	public function newAction(Tx_JheVimeo_Domain_Model_VideoList $newVideoList = NULL) {
-		$this->view->assign('newVideoList', $newVideoList);
-	}
-
-	/**
-	 * action create
-	 *
-	 * @param Tx_JheVimeo_Domain_Model_VideoList $newVideoList
-	 * @return void
-	 */
-	public function createAction(Tx_JheVimeo_Domain_Model_VideoList $newVideoList) {
-		$this->videoListRepository->add($newVideoList);
-		$this->flashMessageContainer->add('Your new VideoList was created.');
-		$this->redirect('list');
-	}
-
-	/**
-	 * action edit
-	 *
-	 * @param Tx_JheVimeo_Domain_Model_VideoList $videoList
-	 * @return void
-	 */
-	public function editAction(Tx_JheVimeo_Domain_Model_VideoList $videoList) {
-		$this->view->assign('videoList', $videoList);
-	}
-
-	/**
-	 * action update
-	 *
-	 * @param Tx_JheVimeo_Domain_Model_VideoList $videoList
-	 * @return void
-	 */
-	public function updateAction(Tx_JheVimeo_Domain_Model_VideoList $videoList) {
-		$this->videoListRepository->update($videoList);
-		$this->flashMessageContainer->add('Your VideoList was updated.');
-		$this->redirect('list');
-	}
-
-	/**
-	 * action delete
-	 *
-	 * @param Tx_JheVimeo_Domain_Model_VideoList $videoList
-	 * @return void
-	 */
-	public function deleteAction(Tx_JheVimeo_Domain_Model_VideoList $videoList) {
-		$this->videoListRepository->remove($videoList);
-		$this->flashMessageContainer->add('Your VideoList was removed.');
-		$this->redirect('list');
-	}
-
 }
 ?>

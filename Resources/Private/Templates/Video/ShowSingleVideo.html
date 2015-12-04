@@ -12,10 +12,8 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Single View for VideoList</h1>
+<h3>Single View for Video</h3>
 
 <f:flashMessages />
-<f:render partial="VideoList/Properties" arguments="{videoList:videoList}" />
-<f:link.action action="list">Back to list</f:link.action><br />
-<f:link.action action="new">New VideoList</f:link.action>
+<f:render partial="Video/Properties" arguments="{video:video}" />
 </f:section>

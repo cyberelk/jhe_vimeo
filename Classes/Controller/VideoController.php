@@ -51,81 +51,13 @@ class Tx_JheVimeo_Controller_VideoController extends Tx_Extbase_MVC_Controller_A
 	}
 
 	/**
-	 * action list
+	 * action showSingleVideo
 	 *
 	 * @return void
 	 */
-	public function listAction() {
-		$videos = $this->videoRepository->findAll();
-		$this->view->assign('videos', $videos);
-	}
-
-	/**
-	 * action show
-	 *
-	 * @param Tx_JheVimeo_Domain_Model_Video $video
-	 * @return void
-	 */
-	public function showAction(Tx_JheVimeo_Domain_Model_Video $video) {
+	public function showSingleVideoAction() {
+		$video = $this->videoRepository->findByUid($this->settings['video']);
 		$this->view->assign('video', $video);
 	}
-
-	/**
-	 * action new
-	 *
-	 * @param Tx_JheVimeo_Domain_Model_Video $newVideo
-	 * @dontvalidate $newVideo
-	 * @return void
-	 */
-	public function newAction(Tx_JheVimeo_Domain_Model_Video $newVideo = NULL) {
-		$this->view->assign('newVideo', $newVideo);
-	}
-
-	/**
-	 * action create
-	 *
-	 * @param Tx_JheVimeo_Domain_Model_Video $newVideo
-	 * @return void
-	 */
-	public function createAction(Tx_JheVimeo_Domain_Model_Video $newVideo) {
-		$this->videoRepository->add($newVideo);
-		$this->flashMessageContainer->add('Your new Video was created.');
-		$this->redirect('list');
-	}
-
-	/**
-	 * action edit
-	 *
-	 * @param Tx_JheVimeo_Domain_Model_Video $video
-	 * @return void
-	 */
-	public function editAction(Tx_JheVimeo_Domain_Model_Video $video) {
-		$this->view->assign('video', $video);
-	}
-
-	/**
-	 * action update
-	 *
-	 * @param Tx_JheVimeo_Domain_Model_Video $video
-	 * @return void
-	 */
-	public function updateAction(Tx_JheVimeo_Domain_Model_Video $video) {
-		$this->videoRepository->update($video);
-		$this->flashMessageContainer->add('Your Video was updated.');
-		$this->redirect('list');
-	}
-
-	/**
-	 * action delete
-	 *
-	 * @param Tx_JheVimeo_Domain_Model_Video $video
-	 * @return void
-	 */
-	public function deleteAction(Tx_JheVimeo_Domain_Model_Video $video) {
-		$this->videoRepository->remove($video);
-		$this->flashMessageContainer->add('Your Video was removed.');
-		$this->redirect('list');
-	}
-
 }
 ?>

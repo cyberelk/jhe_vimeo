@@ -75,4 +75,18 @@ $TCA['tx_jhevimeo_domain_model_videolist'] = array(
 	),
 );
 
+
+$extensionName = strtolower(t3lib_div::underscoredToUpperCamelCase($_EXTKEY));
+$pluginName = strtolower('Pi2');
+$pluginSignature = $extensionName.'_'.$pluginName;
+$TCA['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignature] = 'layout,select_key,pages,recursive';
+$TCA['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
+t3lib_extMgm::addPiFlexFormValue($pluginSignature, 'FILE:EXT:'.$_EXTKEY . '/Configuration/Flexform/Video.xml');
+
+$extensionName = strtolower(t3lib_div::underscoredToUpperCamelCase($_EXTKEY));
+$pluginName = strtolower('Pi1');
+$pluginSignature = $extensionName.'_'.$pluginName;
+$TCA['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignature] = 'layout,select_key,pages,recursive';
+$TCA['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
+t3lib_extMgm::addPiFlexFormValue($pluginSignature, 'FILE:EXT:'.$_EXTKEY . '/Configuration/Flexform/VideoList.xml');
 ?>
