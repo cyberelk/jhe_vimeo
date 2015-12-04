@@ -1,18 +1,8 @@
-<table class="tx-jhe-vimeo" >
-	<tr>
-		<td>
-			<f:translate key="tx_jhevimeo_domain_model_videolist.title" />
-		</td>
-		<td>
-			{videoList.title}
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<f:translate key="tx_jhevimeo_domain_model_videolist.description" />
-		</td>
-		<td>
-			{videoList.description}
-		</td>
-	</tr>
-</table>
+<h3>{videoList.title}</h3>
+<p>{videoList.description}</p>
+
+<f:for each="{videoList.videos}" as="video">
+	<h4>{video.title}</h4>
+	<p>{video.description}</p>
+	<iframe src="https://player.vimeo.com/video/{video.vimeoid}" width="{video.width}" height="{video.height}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</f:for>
