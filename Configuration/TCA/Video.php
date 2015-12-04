@@ -157,6 +157,7 @@ $TCA['tx_jhevimeo_domain_model_video'] = array(
 				'type' => 'select',
 				'foreign_table' => 'tx_jhevimeo_domain_model_videolist',
 				'MM' => 'tx_jhevimeo_video_videolist_mm',
+				'MM_opposite_field' => 'videos',
 				'size' => 10,
 				'autoSizeMax' => 30,
 				'maxitems' => 9999,
