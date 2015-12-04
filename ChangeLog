@@ -5,6 +5,7 @@
 	* Added new showSingleVideo and showVideoLists actions to the controllers
 	* Added new template files for the new actions
 	* Code cleanup: deleted unused actions and template files
+	* Rearranged the single video templates for a better output
 
 2015-12-03 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.0.0
 
