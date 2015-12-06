@@ -20,6 +20,30 @@
                     </config>
                 </TCEforms>
             </settings.video>
+            <settings.width>
+                <TCEforms>
+                    <exclude>1</exclude>
+                    <label>Breite des Videos</label>
+                    <config>
+                        <type>input</type>
+                        <size>20</size>
+                        <max>30</max>
+                        <eval>trim</eval>
+                    </config>
+                </TCEforms>
+            </settings.width>
+            <settings.height>
+                <TCEforms>
+                    <exclude>1</exclude>
+                    <label>Höhe des Videos</label>
+                    <config>
+                        <type>input</type>
+                        <size>20</size>
+                        <max>30</max>
+                        <eval>trim</eval>
+                    </config>
+                </TCEforms>
+            </settings.height>
         </el>
     </ROOT>
 </T3DataStructure>

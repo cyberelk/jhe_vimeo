@@ -1,3 +1,8 @@
+2015-12-06 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.0.0
+
+	* Added new flexform fields for video width and height to the plugins to
+	  overwrite the settings oh the video / video list records
+
 2015-12-04 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.0.0
 
 	* Implemented the correct m:n functionality between videos and video lists
