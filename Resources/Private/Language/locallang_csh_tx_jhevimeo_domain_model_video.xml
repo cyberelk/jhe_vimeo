@@ -13,6 +13,8 @@
 			<label index="title.description">title</label>
 			<label index="description.description">description</label>
 			<label index="video_lists.description">videoLists</label>
+			<label index="tx_jhevimeo_domain_model_video.selectVideoLabel">Select video</label>
+			<label index="tx_jhevimeo_domain_model_video.videoWidthLabel">Video width</label>
 		</languageKey>
 		<languageKey index="de" type="array">
 			<label index="vimeoid.description">Vimeo-ID</label>
@@ -21,6 +23,8 @@
 			<label index="title.description">Titel</label>
 			<label index="description.description">Beschreibung</label>
 			<label index="video_lists.description">Video-Listen</label>
+			<label index="tx_jhevimeo_domain_model_video.selectVideoLabel">Video auswählen</label>
+			<label index="tx_jhevimeo_domain_model_video.videoWidthLabel">Breite des Videos</label>
 		</languageKey>
 	</data>
 </T3locallang>

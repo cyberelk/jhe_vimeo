@@ -1,3 +1,9 @@
+2015-12-08 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.0.0
+
+	* Added the logic to yesterdays new flexforms to override the video
+	  record width and height settings in the plugin flexforms
+	* Added correct multi language approach to the flexform labels
+
 2015-12-06 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.0.0
 
 	* Added new flexform fields for video width and height to the plugins to

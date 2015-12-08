@@ -13,6 +13,12 @@ plugin.tx_jhevimeo {
 	}
 }
 
+lib.math = TEXT
+lib.math {
+	current = 1
+	prioriCalc = 1
+}
+
 plugin.tx_jhevimeo._CSS_DEFAULT_STYLE (
 	textarea.f3-form-error {
 		background-color:#FF9F9F;

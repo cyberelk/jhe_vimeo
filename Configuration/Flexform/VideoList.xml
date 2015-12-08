@@ -9,7 +9,7 @@
             <settings.videolist>
                 <TCEforms>
                     <exclude>1</exclude>
-                    <label>Videoliste auswählen</label>
+                    <label>LLL:EXT:jhe_vimeo/Resources/Private/Language/locallang_csh_tx_jhevimeo_domain_model_videolist.xml:tx_jhevimeo_domain_model_videolist.selectVideoListLabel</label>
                     <config>
                         <type>group</type>
                         <internal_type>db</internal_type>
@@ -23,27 +23,15 @@
             <settings.width>
                 <TCEforms>
                     <exclude>1</exclude>
-                    <label>Breite der Videos</label>
+                    <label>LLL:EXT:jhe_vimeo/Resources/Private/Language/locallang_csh_tx_jhevimeo_domain_model_videolist.xml:tx_jhevimeo_domain_model_videolist.videosWidthLabel</label>
                     <config>
                         <type>input</type>
                         <size>20</size>
                         <max>30</max>
-                        <eval>trim</eval>
+                        <eval>int</eval>
                     </config>
                 </TCEforms>
             </settings.width>
-            <settings.height>
-                <TCEforms>
-                    <exclude>1</exclude>
-                    <label>Höhe der Videos</label>
-                    <config>
-                        <type>input</type>
-                        <size>20</size>
-                        <max>30</max>
-                        <eval>trim</eval>
-                    </config>
-                </TCEforms>
-            </settings.height>
         </el>
     </ROOT>
 </T3DataStructure>

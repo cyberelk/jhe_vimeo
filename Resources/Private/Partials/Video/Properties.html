@@ -1,3 +1,11 @@
 <h3>{video.title}</h3>
-<p>{video.description}</p>
-<iframe src="https://player.vimeo.com/video/{video.vimeoid}" width="{video.width}" height="{video.height}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><f:format.html>{video.description}</f:format.html></p>
+
+<f:if condition="{videoDimensions.width} != 0">
+	<f:then>
+		<iframe src="https://player.vimeo.com/video/{video.vimeoid}" width="{videoDimensions.width}" height="{videoDimensions.height}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</f:then>
+	<f:else>
+		<iframe src="https://player.vimeo.com/video/{video.vimeoid}" width="{video.width}" height="{video.height}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</f:else>
+</f:if>

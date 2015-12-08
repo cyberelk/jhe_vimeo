@@ -56,8 +56,15 @@ class Tx_JheVimeo_Controller_VideoListController extends Tx_Extbase_MVC_Controll
 	 * @return void
 	 */
 	public function showVideoListAction() {
+
+		$videoDimensions = NULL;
+
 		$videoList = $this->videoListRepository->findByUid($this->settings['videolist']);
+
+		$videoDimensions['width'] = $this->settings['width'];
+
 		$this->view->assign('videoList', $videoList);
+		$this->view->assign('videoDimensions', $videoDimensions);
 	}
 }
 ?>

@@ -1,8 +1,15 @@
 <h3>{videoList.title}</h3>
-<p>{videoList.description}</p>
+<p><f:format.html>{videoList.description}</f:format.html></p>
 
 <f:for each="{videoList.videos}" as="video">
 	<h4>{video.title}</h4>
-	<p>{video.description}</p>
-	<iframe src="https://player.vimeo.com/video/{video.vimeoid}" width="{video.width}" height="{video.height}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	<p><f:format.html>{video.description}</f:format.html></p>
+	<f:if condition="{videoDimensions.width} != 0">
+		<f:then>
+			<iframe src="https://player.vimeo.com/video/{video.vimeoid}" width="{videoDimensions.width}" height="{f:cObject(typoscriptObjectPath:'lib.math', data:'({videoDimensions.width}*{video.height})/{video.width}')}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</f:then>
+		<f:else>
+			<iframe src="https://player.vimeo.com/video/{video.vimeoid}" width="{video.width}" height="{video.height}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</f:else>
+	</f:if>
 </f:for>

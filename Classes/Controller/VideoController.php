@@ -56,8 +56,16 @@ class Tx_JheVimeo_Controller_VideoController extends Tx_Extbase_MVC_Controller_A
 	 * @return void
 	 */
 	public function showSingleVideoAction() {
+
+		$videoDimensions = NULL;
+
 		$video = $this->videoRepository->findByUid($this->settings['video']);
+
+		$videoDimensions['height'] = round((intval($this->settings['width']) * $video->getHeight()) / $video->getWidth(), 0);
+		$videoDimensions['width'] = intval($this->settings['width']);
+
 		$this->view->assign('video', $video);
+		$this->view->assign('videoDimensions', $videoDimensions);
 	}
 }
 ?>
