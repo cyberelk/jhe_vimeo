@@ -1,3 +1,9 @@
+2015-12-10 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.2.0
+
+	* Checked the extension in TYPO3 version 6LTS: no problems detected
+	* Changed TYPO3 dependencies to 4.5.99-6.2.99
+	* Changed version to 0.2.0
+
 2015-12-10 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.1.0
 
 	* Made the height field in video record mandatory
