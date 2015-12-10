@@ -1,3 +1,8 @@
+2015-12-10 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.2.1
+
+	* Corrected an configuration error
+	* Updated to version 0.2.1
+
 2015-12-10 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.2.0
 
 	* Checked the extension in TYPO3 version 6LTS: no problems detected
