@@ -1,3 +1,14 @@
+2015-12-10 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.1.0
+
+	* Made the height field in video record mandatory
+	* Changed the order of the tca fields for video records (title to top)
+	* Made the tca labels for the plugins translatable
+	* Corrected the label name for single videos
+	* Changed the labels for video standard width and height
+	* Deleted unsued template files
+	* Changed version to 0.1.0
+	* Changed state to beta
+
 2015-12-08 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.0.0
 
 	* Added the logic to yesterdays new flexforms to override the video

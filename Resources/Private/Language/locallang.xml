@@ -19,7 +19,7 @@
 			<label index="tx_jhevimeo_domain_model_videolist.videos">Videos</label>
 		</languageKey>
 		<languageKey index="de" type="array">
-			<label index="tx_jhevimeo_domain_model_video">Video</label>
+			<label index="tx_jhevimeo_domain_model_video">Einzelvideo</label>
 			<label index="tx_jhevimeo_domain_model_video.vimeoid">Vimeo-ID</label>
 			<label index="tx_jhevimeo_domain_model_video.width">Breite</label>
 			<label index="tx_jhevimeo_domain_model_video.height">Höhe</label>

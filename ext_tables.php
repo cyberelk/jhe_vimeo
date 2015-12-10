@@ -6,13 +6,13 @@ if (!defined('TYPO3_MODE')) {
 Tx_Extbase_Utility_Extension::registerPlugin(
 	$_EXTKEY,
 	'Pi1',
-	'Video list'
+	'LLL:EXT:jhe_vimeo/Resources/Private/Language/locallang.xml:tx_jhevimeo_domain_model_videolist'
 );
 
 Tx_Extbase_Utility_Extension::registerPlugin(
 	$_EXTKEY,
 	'Pi2',
-	'Single video'
+	'LLL:EXT:jhe_vimeo/Resources/Private/Language/locallang.xml:tx_jhevimeo_domain_model_video'
 );
 
 t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Vimeo');

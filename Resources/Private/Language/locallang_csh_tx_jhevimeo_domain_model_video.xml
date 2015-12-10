@@ -18,8 +18,8 @@
 		</languageKey>
 		<languageKey index="de" type="array">
 			<label index="vimeoid.description">Vimeo-ID</label>
-			<label index="width.description">Breite</label>
-			<label index="height.description">Höhe</label>
+			<label index="width.description">Standardbreite</label>
+			<label index="height.description">Standardhöhe</label>
 			<label index="title.description">Titel</label>
 			<label index="description.description">Beschreibung</label>
 			<label index="video_lists.description">Video-Listen</label>

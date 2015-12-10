@@ -53,6 +53,7 @@ class Tx_JheVimeo_Domain_Model_Video extends Tx_Extbase_DomainObject_AbstractEnt
 	 * height
 	 *
 	 * @var integer
+	 * @validate NotEmpty
 	 */
 	protected $height;
 

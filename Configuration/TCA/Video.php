@@ -6,10 +6,10 @@ if (!defined ('TYPO3_MODE')) {
 $TCA['tx_jhevimeo_domain_model_video'] = array(
 	'ctrl' => $TCA['tx_jhevimeo_domain_model_video']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, vimeoid, width, height, title, description, video_lists',
+		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, vimeoid, width, height, description, video_lists',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, vimeoid, width, height, title, description, video_lists,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, vimeoid, width, height, description, video_lists,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -117,7 +117,7 @@ $TCA['tx_jhevimeo_domain_model_video'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 4,
-				'eval' => 'int'
+				'eval' => 'int,required'
 			),
 		),
 		'title' => array(
