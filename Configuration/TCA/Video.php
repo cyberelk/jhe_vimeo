@@ -20,6 +20,7 @@ $TCA['tx_jhevimeo_domain_model_video'] = array(
 			'label' => 'LLL:EXT:lang/locallang_general.xml:LGL.language',
 			'config' => array(
 				'type' => 'select',
+				'renderType' => 'selectSingle',
 				'foreign_table' => 'sys_language',
 				'foreign_table_where' => 'ORDER BY sys_language.title',
 				'items' => array(
@@ -34,6 +35,7 @@ $TCA['tx_jhevimeo_domain_model_video'] = array(
 			'label' => 'LLL:EXT:lang/locallang_general.xml:LGL.l18n_parent',
 			'config' => array(
 				'type' => 'select',
+				'renderType' => 'selectSingle',
 				'items' => array(
 					array('', 0),
 				),
@@ -139,13 +141,15 @@ $TCA['tx_jhevimeo_domain_model_video'] = array(
 				'eval' => 'trim',
 				'wizards' => array(
 					'RTE' => array(
-						'icon' => 'wizard_rte2.gif',
-						'notNewRecords'=> 1,
+						'notNewRecords' => 1,
 						'RTEonly' => 1,
-						'script' => 'wizard_rte.php',
-						'title' => 'LLL:EXT:cms/locallang_ttc.xml:bodytext.W.RTE',
-						'type' => 'script'
-					)
+						'type' => 'script',
+						'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.RTE',
+						'icon' => 'wizard_rte2.gif',
+						'module' => array(
+							'name' => 'wizard_rte'
+						)
+					),
 				)
 			),
 			'defaultExtras' => 'richtext:rte_transform[flag=rte_enabled|mode=ts]',
@@ -155,6 +159,7 @@ $TCA['tx_jhevimeo_domain_model_video'] = array(
 			'label' => 'LLL:EXT:jhe_vimeo/Resources/Private/Language/locallang_db.xml:tx_jhevimeo_domain_model_video.video_lists',
 			'config' => array(
 				'type' => 'select',
+				'renderType' => 'selectMultipleSideBySide',
 				'foreign_table' => 'tx_jhevimeo_domain_model_videolist',
 				'MM' => 'tx_jhevimeo_video_videolist_mm',
 				'MM_opposite_field' => 'videos',
@@ -167,22 +172,26 @@ $TCA['tx_jhevimeo_domain_model_video'] = array(
 					'_VERTICAL' => 1,
 					'edit' => array(
 						'type' => 'popup',
-						'title' => 'Edit',
-						'script' => 'wizard_edit.php',
-						'icon' => 'edit2.gif',
-						'popup_onlyOpenIfSelected' => 1,
-						'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1',
+						'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_edit_title',
+						'module' => array(
+							'name' => 'wizard_edit',
 						),
-					'add' => Array(
+						'popup_onlyOpenIfSelected' => 1,
+						'icon' => 'edit2.gif',
+						'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
+					),
+					'add' => array(
 						'type' => 'script',
-						'title' => 'Create new',
+						'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_add_title',
 						'icon' => 'add.gif',
 						'params' => array(
 							'table' => 'tx_jhevimeo_domain_model_videolist',
 							'pid' => '###CURRENT_PID###',
 							'setValue' => 'prepend'
-							),
-						'script' => 'wizard_add.php',
+						),
+						'module' => array(
+							'name' => 'wizard_add'
+						)
 					),
 				),
 			),

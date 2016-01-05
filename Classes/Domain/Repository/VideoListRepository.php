@@ -1,5 +1,5 @@
 <?php
-
+namespace Jhe\JheVimeo\Domain\Repository;
 /***************************************************************
  *  Copyright notice
  *
@@ -31,7 +31,7 @@
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  *
  */
-class Tx_JheVimeo_Domain_Repository_VideoListRepository extends Tx_Extbase_Persistence_Repository {
+class VideoListRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 
 }
 ?>

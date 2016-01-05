@@ -1,5 +1,5 @@
 <?php
-
+namespace Jhe\JheVimeo\Controller;
 /***************************************************************
  *  Copyright notice
  *
@@ -31,22 +31,22 @@
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  *
  */
-class Tx_JheVimeo_Controller_VideoController extends Tx_Extbase_MVC_Controller_ActionController {
+class VideoController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
 
 	/**
 	 * videoRepository
 	 *
-	 * @var Tx_JheVimeo_Domain_Repository_VideoRepository
+	 * @var \Jhe\JheVimeo\Domain\Repository\VideoRepository
 	 */
 	protected $videoRepository;
 
 	/**
 	 * injectVideoRepository
 	 *
-	 * @param Tx_JheVimeo_Domain_Repository_VideoRepository $videoRepository
+	 * @param \Jhe\JheVimeo\Domain\Repository\VideoRepository $videoRepository
 	 * @return void
 	 */
-	public function injectVideoRepository(Tx_JheVimeo_Domain_Repository_VideoRepository $videoRepository) {
+	public function injectVideoRepository(\Jhe\JheVimeo\Domain\Repository\VideoRepository $videoRepository) {
 		$this->videoRepository = $videoRepository;
 	}
 

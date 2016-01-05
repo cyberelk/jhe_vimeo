@@ -1,5 +1,5 @@
 <?php
-
+namespace Jhe\JheVimeo\Domain\Model;
 /***************************************************************
  *  Copyright notice
  *
@@ -31,7 +31,7 @@
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  *
  */
-class Tx_JheVimeo_Domain_Model_VideoList extends Tx_Extbase_DomainObject_AbstractEntity {
+class VideoList extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 
 	/**
 	 * title
@@ -50,7 +50,7 @@ class Tx_JheVimeo_Domain_Model_VideoList extends Tx_Extbase_DomainObject_Abstrac
 	/**
 	 * videos
 	 *
-	 * @var Tx_Extbase_Persistence_ObjectStorage<Tx_JheVimeo_Domain_Model_Video>
+	 * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Jhe\JheVimeo\Domain\Model\Video>
 	 */
 	protected $videos;
 
@@ -75,7 +75,7 @@ class Tx_JheVimeo_Domain_Model_VideoList extends Tx_Extbase_DomainObject_Abstrac
 		 * It will be rewritten on each save in the extension builder
 		 * You may modify the constructor of this class instead
 		 */
-		$this->videos = new Tx_Extbase_Persistence_ObjectStorage();
+		$this->videos = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
 	}
 
 	/**
@@ -119,27 +119,27 @@ class Tx_JheVimeo_Domain_Model_VideoList extends Tx_Extbase_DomainObject_Abstrac
 	/**
 	 * Adds a Video
 	 *
-	 * @param Tx_JheVimeo_Domain_Model_Video $video
+	 * @param \Jhe\JheVimeo\Domain\Model\Video $video
 	 * @return void
 	 */
-	public function addVideo(Tx_JheVimeo_Domain_Model_Video $video) {
+	public function addVideo(\Jhe\JheVimeo\Domain\Model\Video $video) {
 		$this->videos->attach($video);
 	}
 
 	/**
 	 * Removes a Video
 	 *
-	 * @param Tx_JheVimeo_Domain_Model_Video $videoToRemove The Video to be removed
+	 * @param \Jhe\JheVimeo\Domain\Model\Video $videoToRemove The Video to be removed
 	 * @return void
 	 */
-	public function removeVideo(Tx_JheVimeo_Domain_Model_Video $videoToRemove) {
+	public function removeVideo(\Jhe\JheVimeo\Domain\Model\Video $videoToRemove) {
 		$this->videos->detach($videoToRemove);
 	}
 
 	/**
 	 * Returns the videos
 	 *
-	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_JheVimeo_Domain_Model_Video> $videos
+	 * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Jhe\JheVimeo\Domain\Model\Video> $videos
 	 */
 	public function getVideos() {
 		return $this->videos;
@@ -148,10 +148,10 @@ class Tx_JheVimeo_Domain_Model_VideoList extends Tx_Extbase_DomainObject_Abstrac
 	/**
 	 * Sets the videos
 	 *
-	 * @param Tx_Extbase_Persistence_ObjectStorage<Tx_JheVimeo_Domain_Model_Video> $videos
+	 * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Jhe\JheVimeo\Domain\Model\Video> $videos
 	 * @return void
 	 */
-	public function setVideos(Tx_Extbase_Persistence_ObjectStorage $videos) {
+	public function setVideos(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $videos) {
 		$this->videos = $videos;
 	}
 
