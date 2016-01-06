@@ -66,6 +66,7 @@ class Tx_JheVimeo_Controller_VideoController extends Tx_Extbase_MVC_Controller_A
 
 		$this->view->assign('video', $video);
 		$this->view->assign('videoDimensions', $videoDimensions);
+		$this->view->assign('settings', $this->settings);
 	}
 }
 ?>

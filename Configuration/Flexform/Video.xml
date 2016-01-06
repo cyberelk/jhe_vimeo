@@ -33,6 +33,15 @@
                     </config>
                 </TCEforms>
             </settings.width>
+            <settings.showDescription>
+                <TCEforms>
+                    <exclude>1</exclude>
+                    <label>LLL:EXT:jhe_vimeo/Resources/Private/Language/locallang_csh_tx_jhevimeo_domain_model_video.xml:tx_jhevimeo_domain_model_video.showDescription</label>
+                    <config>
+                        <type>check</type>
+                    </config>
+                </TCEforms>
+            </settings.showDescription>
         </el>
     </ROOT>
 </T3DataStructure>

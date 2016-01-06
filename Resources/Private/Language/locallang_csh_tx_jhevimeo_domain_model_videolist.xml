@@ -12,6 +12,7 @@
 			<label index="videos.description">videos</label>
 			<label index="tx_jhevimeo_domain_model_videolist.selectVideoListLabel">Select video list</label>
 			<label index="tx_jhevimeo_domain_model_videolist.videosWidthLabel">Width of the videos</label>
+			<label index="tx_jhevimeo_domain_model_videolist.showDescriptions">Show descriptions</label>
 		</languageKey>
 		<languageKey index="de" type="array">
 			<label index="title.description">Titel</label>
@@ -19,6 +20,7 @@
 			<label index="videos.description">Videos</label>
 			<label index="tx_jhevimeo_domain_model_videolist.selectVideoListLabel">Videoliste auswählen</label>
 			<label index="tx_jhevimeo_domain_model_videolist.videosWidthLabel">Breite der Videos</label>
+			<label index="tx_jhevimeo_domain_model_videolist.showDescriptions">Zeige Beschreibungstexte</label>
 		</languageKey>
 	</data>
 </T3locallang>

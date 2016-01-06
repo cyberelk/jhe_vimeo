@@ -1,3 +1,8 @@
+2016-01-06 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.1.1
+
+	* Added checkboxes to the plugin flexforms to set the output of
+	  description texts
+
 2015-12-10 Jari-Hermann Ernst, M.A.  <jari-hermann.ernst@bad-gmbh.de> V0.1.0
 
 	* Made the height field in video record mandatory

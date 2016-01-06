@@ -1,5 +1,8 @@
 <h3>{video.title}</h3>
-<p><f:format.html>{video.description}</f:format.html></p>
+
+<f:if condition="{settings.showDescription}">
+	<p><f:format.html>{video.description}</f:format.html></p>
+</f:if>
 
 <f:if condition="{videoDimensions.width} != 0">
 	<f:then>
