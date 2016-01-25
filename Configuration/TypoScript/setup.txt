@@ -20,26 +20,14 @@ lib.math {
 }
 
 plugin.tx_jhevimeo._CSS_DEFAULT_STYLE (
-	textarea.f3-form-error {
-		background-color:#FF9F9F;
-		border: 1px #FF0000 solid;
+	.tx-jhe-vimeo .list_description {
+		margin: 0 0 1.2em 0;
 	}
-
-	input.f3-form-error {
-		background-color:#FF9F9F;
-		border: 1px #FF0000 solid;
+	.tx-jhe-vimeo .video_item h4 {
+		margin-top: 1em;
+		border-bottom: 1px solid #d3e4d5;
 	}
-
-	.tx-jhe-vimeo table {
-		border-collapse:separate;
-		border-spacing:10px;
-	}
-
-	.tx-jhe-vimeo table th {
-		font-weight:bold;
-	}
-
-	.tx-jhe-vimeo table td {
-		vertical-align:top;
+	.tx-jhe-vimeo .video_item p {
+		margin: 0 0 0.2em 0;
 	}
 )

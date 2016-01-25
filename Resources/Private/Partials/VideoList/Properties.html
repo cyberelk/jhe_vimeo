@@ -1,19 +1,21 @@
 <h3>{videoList.title}</h3>
 <f:if condition="{settings.showDescriptions}">
-	<p><f:format.html>{videoList.description}</f:format.html></p>
+	<div class="list_description"><f:format.html>{videoList.description}</f:format.html></div>
 </f:if>
 
 <f:for each="{videoList.videos}" as="video">
-	<h4>{video.title}</h4>
-	<f:if condition="{settings.showDescriptions}">
-		<p><f:format.html>{video.description}</f:format.html></p>
-	</f:if>
-	<f:if condition="{videoDimensions.width} != 0">
-		<f:then>
-			<iframe src="https://player.vimeo.com/video/{video.vimeoid}" width="{videoDimensions.width}" height="{f:cObject(typoscriptObjectPath:'lib.math', data:'({videoDimensions.width}*{video.height})/{video.width}')}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-		</f:then>
-		<f:else>
-			<iframe src="https://player.vimeo.com/video/{video.vimeoid}" width="{video.width}" height="{video.height}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-		</f:else>
-	</f:if>
+	<div class="video_item">
+		<h4>{video.title}</h4>
+		<f:if condition="{settings.showDescriptions}">
+			<div class="video_description"><f:format.html>{video.description}</f:format.html></div>
+		</f:if>
+		<f:if condition="{videoDimensions.width} != 0">
+			<f:then>
+				<iframe src="https://player.vimeo.com/video/{video.vimeoid}" width="{videoDimensions.width}" height="{f:cObject(typoscriptObjectPath:'lib.math', data:'({videoDimensions.width}*{video.height})/{video.width}')}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</f:then>
+			<f:else>
+				<iframe src="https://player.vimeo.com/video/{video.vimeoid}" width="{video.width}" height="{video.height}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</f:else>
+		</f:if>
+	</div>
 </f:for>
