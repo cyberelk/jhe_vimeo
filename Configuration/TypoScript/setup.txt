@@ -31,3 +31,6 @@ plugin.tx_jhevimeo._CSS_DEFAULT_STYLE (
 		margin: 0 0 0.2em 0;
 	}
 )
+
+
+tt_content.jhevimeo_pi1 = TEXT
